@@ -38,8 +38,7 @@
     cursor: inherit;
     display: none; }
   .carousel .control-prev.control-arrow {
-    left: 0;
-    right: 300px !important; }
+    left: 0; }
     .carousel .control-prev.control-arrow:before {
       border-right: 8px solid #fff; }
   .carousel .control-next.control-arrow {
@@ -112,13 +111,11 @@
       top: auto;
       color: #fff;
       font-size: 26px;
-      left: 0;
-      right: 0;
       bottom: 0;
       margin-top: 0;
       margin: auto;
       padding: 5px;
-      width: 210px;
+      width: auto;
       height: 40px;
       background-color: #6c8ced;
       z-index: 0;
