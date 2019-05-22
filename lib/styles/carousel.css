@@ -17,7 +17,8 @@
   filter: alpha(opacity=40);
   position: absolute;
   z-index: 2;
-  top: 20px;
+  top: 0px;
+  bottom: 0;
   background: none;
   border: 0;
   font-size: 32px;
@@ -107,14 +108,18 @@
     margin: 0;
     overflow: hidden; }
     .carousel.carousel-slider .control-arrow {
-      top: 0;
+      top: auto;
       color: #fff;
       font-size: 26px;
       bottom: 0;
       margin-top: 0;
-      padding: 5px; }
-      .carousel.carousel-slider .control-arrow:hover {
-        background: rgba(0, 0, 0, 0.2); }
+      margin: auto;
+      padding: 5px;
+      width: auto;
+      height: 40px;
+      background-color: #6c8ced;
+      z-index: 0;
+      opacity: 0; }
   .carousel .slider-wrapper {
     overflow: hidden;
     margin: auto;

@@ -3,7 +3,8 @@
 	@include opacity(.4);
 	position: absolute;
 	z-index: 2;
-	top: 20px;
+	top: 0px;
+	bottom: 0;
 	background: none;
 	border: 0;
 	font-size: 32px;
@@ -31,6 +32,7 @@
 
 	&.control-prev {
 		left: 0;
+		// right: 300px !important;
 		&:before {
 			border-right: 8px solid #fff;
 		}
@@ -38,6 +40,7 @@
 
 	&.control-next {
 		right: 0;
+		// left: 300px !important;
 		&:before {
 			border-left: 8px solid #fff;
 		}
@@ -121,16 +124,18 @@
 		// adjusting the arrows for the slider
 		.control-arrow {
 			@extend %arrows;
-			top: 0;
+			top: auto;
 			color: #fff;
 			font-size: 26px;
 			bottom: 0;
 			margin-top: 0;
+			margin: auto;
 			padding: 5px;
-
-			&:hover {
-				background: rgba(#000, .2);
-			}
+			width: auto;
+			height: 40px;
+			background-color: #6c8ced;
+			z-index: 0;
+			opacity: 0;
 
 		}
 	}
